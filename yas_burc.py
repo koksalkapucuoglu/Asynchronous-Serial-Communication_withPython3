@@ -1,5 +1,5 @@
 python-serial yas ve burc bulma
-----------------------------------
+#----------------------------------
 # -*- coding: utf-8 -*-
 
 import serial
