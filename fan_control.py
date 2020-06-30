@@ -13,7 +13,7 @@ gpio.setcfg(fan,gpio.OUTPUT)
 
 ser=serial.Serial('/dev/ttyS1',9600)
 ser.write('\n2 kategorimiz var.Bunlardan birini seciniz\n1-)1 sn araliklarla led yakma\n2-)fani dondur')
-print "Seri Haberlesme basliyor\n"
+print("Seri Haberlesme basliyor\n")
 
 ser.write('\n\nLutfen bir kategori secin: ')
 
