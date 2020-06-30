@@ -1,3 +1,3 @@
-# asenkron_seri_haberlesme
+# Asynchronous-Serial-Communication Using Python3
 
-https://orangepisersa.blogspot.com/ adresinden bloğu takip  edebilirsiniz.
+Yakın zamanda buradaki örnekler ile alakalı yazılar eklenecek.
