@@ -7,13 +7,13 @@ import time
 
 ser=serial.Serial('/dev/ttyS1',9600)
 ser.write('\n2 kategorimizi var.Bunlardan birini seciniz\n1-)Yas hesaplama\n2-)burcunuzun ogrenin')
-print "Seri Haberlesme basliyor\n"
+print ("Seri Haberlesme basliyor\n")
 while 1:
         ser.write('\n\nLutfen bir kategori secin: ')
         secenek=ser.read()
 
         if secenek == '1':
-                print "\nYas hesaplama kategorisi secildi\n"
+                print ("\nYas hesaplama kategorisi secildi\n")
                 ser.write( '\ndogum yilinizi giriniz: ')
                 yil=ser.read(4)
                 intyil=int(yil)
@@ -23,7 +23,7 @@ while 1:
                 ser.write(str(yas).encode('ascii'))
 
         elif secenek== "2":
-                print"\n Burc kategorisi secildi\n"
+                print("\n Burc kategorisi secildi\n")
                 ser.write( '\ndogdugunuz tarihi ay gun bitisik olarak  giriniz: ')
                 tarih=ser.readline()
                 inttarih=int(tarih)
@@ -57,7 +57,7 @@ while 1:
                 ser.write(burc)
 
         else:
-                print "\nSadece 2 kategorimiz var.\n1-)Yas hesaplama\n2-)Burcunuzu ogrenin\n"
+                print( "\nSadece 2 kategorimiz var.\n1-)Yas hesaplama\n2-)Burcunuzu ogrenin\n")
 
 
  		ser.write('\nSadece 2 kategorimiz var.\n1-)Yas hesaplama\n2-)Burcunuzu ogrenin\n')
