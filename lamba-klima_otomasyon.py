@@ -14,7 +14,7 @@ gpio.setcfg(fan,gpio.OUTPUT)
 
 ser=serial.Serial('/dev/ttyS1',9600)
 ser.write('\nEv Otomasyonu Uygulamasina Hosgeldiniz\n')
-print "Seri Haberlesme basliyor\n"
+print("Seri Haberlesme basliyor\n")
 
 ser.write('\nYapmak istediginiz islemi seciniz\n-------------------------------------\n-->lambayak\n-->lambasondur\n-->klimaac\n-->klimakapat\n-->tumsondur\n-->komutlar\n-->programkapat\n')
 
