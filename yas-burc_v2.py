@@ -5,13 +5,13 @@ import time
 
 ser=serial.Serial('/dev/ttyS1',9600)
 ser.write('\n2 kategorimizi var.Bunlardan birini seciniz\n1-)Yas hesaplama\n2-)burcunuzun ogrenin')
-print "Seri Haberlesme basliyor\n"
+print ("Seri Haberlesme basliyor\n")
 
 giris = 'basla'
 while 1:
 	gir = raw_input("baslangic komutunuz giriniz: ")
 	if gir  == 'basla':
-        	print "\n uygulama basliyor\n"
+        	print ("\n uygulama basliyor\n")
         	ser.write('\Uygulama basliyor\n')
         	while 1:
 
@@ -19,7 +19,7 @@ while 1:
                 	secenek=ser.read()
 
                 	if secenek == '1':
-                        	print "\nYas hesaplama kategorisi secildi\n"
+                        	print ("\nYas hesaplama kategorisi secildi\n")
                         	ser.write( '\ndogum yilinizi giriniz: ')
                         	yil=ser.readline()
                         	intyil=int(yil)
@@ -29,7 +29,7 @@ while 1:
                         	ser.write(str(yas).encode('ascii'))
 
                 	elif secenek== "2":
-                        	print"\n Burc kategorisi secildi\n"
+                        	print("\n Burc kategorisi secildi\n")
                         	ser.write( '\ndogdugunuz tarihi ay gun bitisik olarak  giriniz: ')
                         	tarih=ser.readline()
                         	inttarih=int(tarih)
@@ -62,7 +62,7 @@ while 1:
                         	ser.write(burc)
 
                 	else:
-                        	print "\nSadece 2 kategorimiz var.\n1-)Yas hesaplama\n2-)Burcunuzu ogrenin\n"
+                        	print ("\nSadece 2 kategorimiz var.\n1-)Yas hesaplama\n2-)Burcunuzu ogrenin\n")
 
 
                         	ser.write('\nSadece 2 kategorimiz var.\n1-)Yas hesaplama\n2-)Burcunuzu ogrenin\n')
@@ -72,7 +72,7 @@ while 1:
                 	time.sleep(0.1)
 
 	else :
-        	print "\nyanlıs komut girdiniz\n"
+        	print ("\nyanlıs komut girdiniz\n")
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -90,7 +90,7 @@ giris = 'basla'
 gir = raw_input("baslangic komutunuz giriniz: ")
 
 if gir  == 'basla':
-        print "\n uygulama basliyor\n"
+        print ("\n uygulama basliyor\n")
         ser.write('\Uygulama basliyor\n')
         while 1:
 
@@ -98,7 +98,7 @@ if gir  == 'basla':
                 secenek=ser.read()
 
                 if secenek == '1':
-                        print "\nYas hesaplama kategorisi secildi\n"
+                        print( "\nYas hesaplama kategorisi secildi\n")
                         ser.write( '\ndogum yilinizi giriniz: ')
                         yil=ser.readline()
                         intyil=int(yil)
@@ -108,7 +108,7 @@ if gir  == 'basla':
                         ser.write(str(yas).encode('ascii'))
 
                 elif secenek== "2":
-                        print"\n Burc kategorisi secildi\n"
+                        print("\n Burc kategorisi secildi\n")
                         ser.write( '\ndogdugunuz tarihi ay gun bitisik olarak  giriniz: ')
                         tarih=ser.readline()
                         inttarih=int(tarih)
@@ -143,7 +143,7 @@ if gir  == 'basla':
                         ser.write(burc)
 
                 else:
-                        print "\nSadece 2 kategorimiz var.\n1-)Yas hesaplama\n2-)Burcunuzu ogrenin\n"
+                        print( "\nSadece 2 kategorimiz var.\n1-)Yas hesaplama\n2-)Burcunuzu ogrenin\n")
 
 
                         ser.write('\nSadece 2 kategorimiz var.\n1-)Yas hesaplama\n2-)Burcunuzu ogrenin\n')
@@ -153,4 +153,4 @@ if gir  == 'basla':
                 time.sleep(0.1)
 
 else :
-        print "\nyanlıs komut girdiniz\n"
+        print( "\nyanlıs komut girdiniz\n")
